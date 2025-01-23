@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/presentation/pages/initial_page.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:marvel_app/viewModel/blocs/characters_bloc.dart';
+import 'package:marvel_app/viewModel/blocs/characters_bloc_events.dart';
+import 'package:marvel_app/views/presentation/pages/initial_page.dart';
 
 void main() {
-  runApp(const MarvelApp());
+  runApp(MultiBlocProvider(
+    providers: [
+      BlocProvider(
+        create: (context) => CharacterBloc()..add(FetchCharacters()),
+      ),
+    ],
+    child: const MarvelApp(),
+  ));
 }
 
 class MarvelApp extends StatelessWidget {
@@ -10,6 +20,9 @@ class MarvelApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const InitialPage();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: InitialPage(),
+    );
   }
 }
