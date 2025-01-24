@@ -26,7 +26,7 @@ class CharacterCard extends StatelessWidget {
             gradient: LinearGradient(
               colors: [
                 Colors.white.withOpacity(0),
-                Colors.grey.withOpacity(0.8),
+                Colors.black.withOpacity(0.8),
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,

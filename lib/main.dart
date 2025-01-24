@@ -8,7 +8,7 @@ void main() {
   runApp(MultiBlocProvider(
     providers: [
       BlocProvider(
-        create: (context) => CharacterBloc()..add(FetchCharacters()),
+        create: (context) => CharacterBloc()..add(GetAllCharacters()),
       ),
     ],
     child: const MarvelApp(),
