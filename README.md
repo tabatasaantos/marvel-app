@@ -2,15 +2,27 @@
 
 A new Flutter project.
 
-## Getting Started
+## Package used
 
-This project is a starting point for a Flutter application.
+cupertino_icons: ^1.0.8
+flutter_bloc: ^9.0.0
+http: ^1.3.0
+dio: ^5.7.0
+google_fonts: ^6.2.1
+mocktail: ^1.0.4
+crypto: ^3.0.3
 
-A few resources to get you started if this is your first Flutter project:
+## How to use
+To clone and run this application, you'll need Git and Flutter installed on your computer.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Clone this repository
+$ git clone https://github.com/Appii00/Flutter-Bloc-Marvel-App
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Go into the repository
+$ cd Flutter-Bloc-Marvel-App
+
+# Install dependencies
+$ flutter packages get
+
+# Run the app
+$ flutter run
