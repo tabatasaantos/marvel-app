@@ -1,6 +1,6 @@
 # marvel_app
 
-A new Flutter project.
+App para mostrar, filtrar e detalhar personagens da Marvel.
 
 ## Package used
 
